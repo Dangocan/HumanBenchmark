@@ -1,0 +1,13 @@
+.bg-reacao{
+  background: lightcoral;
+  display: inline-block;
+  width: 100vw;
+  height: 50vh;
+}
+
+.bg-reacao___ativado{
+  background: lightgreen;
+  display: inline-block;
+  width: 100vw;
+  height: 50vh;
+}

@@ -1,0 +1,45 @@
+#container-principal{
+  height: calc(75vh + 50px);
+  width: calc(75vw + 50px);
+  margin: 10vh 5vw;
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  background-color: royalblue;
+}
+
+#placar{
+  padding: 0.2rem 0;
+  height: auto;
+  width: calc(75vw + 50px);
+  margin: 10vh 5vw;
+  position: absolute;
+  top: -2rem;
+  left: 2vw;
+  color: black;
+  text-align: center;
+  background-color: red;
+  font-size: 2rem;
+}
+
+#botao-jogar{
+  height: auto;
+  width: calc(75vw + 50px);
+  margin: 0 5vw;
+  z-index: 1;
+  font-size: 5em;
+  text-align: center;
+  position: absolute;
+  top: 50vh;
+  left: 2vw;
+  background-color: blue;
+}
+
+.alvo{
+  background-color: #E80018;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  font-size: 2rem;
+}
