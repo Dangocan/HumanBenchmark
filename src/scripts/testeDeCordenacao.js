@@ -26,6 +26,7 @@ function renderAlvo(y, x) {
 function mudaPlacar() {
   placar.textContent = acertos;
 }
+//Test
 
 function gameOver(tempoInicial) {
   tempoFinal = new Date().getTime() - intervalo * 10;
