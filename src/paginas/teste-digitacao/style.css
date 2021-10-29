@@ -1,7 +1,8 @@
-.text-span-error{
+.text-span-error {
   color: red;
 }
-input{
+input {
+  z-index: -1;
   opacity: 0;
   position: absolute;
   top: 1;
@@ -9,7 +10,7 @@ input{
   width: 30%;
   height: 30%;
 }
-#text-span{
+#text-span {
   z-index: -1;
   top: 1;
   left: 1;
@@ -19,14 +20,14 @@ input{
   color: lightgreen;
   background-color: lightslategrey;
 }
-#texto-principal{
-font-size: x-large;
+#texto-principal {
+  font-size: x-large;
 }
-.text-span-errado{
+.text-span-errado {
   color: red;
 }
-#barra-digitacao{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#barra-digitacao {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: black;
   font-size: xx-large;
   animation-name: blink;
@@ -36,6 +37,10 @@ font-size: x-large;
 }
 
 @keyframes blink {
-  from {color: transparent;}
-  to {color: black;}
+  from {
+    color: transparent;
+  }
+  to {
+    color: black;
+  }
 }
