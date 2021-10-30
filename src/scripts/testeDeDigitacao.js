@@ -1,7 +1,7 @@
 const TEXTOS_DIGITACAO = [
   "Há três espécies de cérebros: uns entendem por si próprios; os outros discernem o que os primeiros entendem; e os terceiros não entendem nem por si próprios nem pelos outros; os primeiros são excelentíssimos; os segundos excelentes; e os terceiros totalmente inúteis.",
   "Os homens quando não são forçados a lutar por necessidade, lutam por ambição.",
-  "",
+  "Ninguém é tão grande que não possa aprender, nem tão pequeno que não possa ensinar.",
   "",
   "",
   "",
