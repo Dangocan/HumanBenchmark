@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste de Reação</title>
-  <link rel="stylesheet" href="../../../reset.css" />
-  <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
-  <h2>Aperte o botão quando a cor de fundo mudar</h2>
-  <span id="botao-reacao" class="bg-reacao">Me aperte</span>
-  <script src="../../scripts/testeDeReacao.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de Reação</title>
+    <link rel="stylesheet" href="../../../styles/reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="../../../assets/logo-header2.png" alt="logo" srcset="" />
+        <h1>
+          <p>Human</p>
+          <p>Benchmark</p>
+        </h1>
+      </div>
+      <nav>
+        <ul>
+          <li>Página Inicial</li>
+          <li>Ranking</li>
+          <li>Sobre</li>
+        </ul>
+      </nav>
+      <div class="user-avatar-container"> 
+        <img src="../../../assets/user.svg" alt="userAvatar" />
+      </div>
+    </header>
+    <main>
+      <h2>
+        Clique no botão para começar a contagem, quando a tela mudar de
+        cor clique o mais rápido que puder na tela
+      </h2>
+      <span id="tela-reacao" class="bg-reacao"
+        ><span id="botao-reacao" class="bt-start">Jogar</span></span
+      >
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>Human Benchmark &copy; Copyright 2021</p>
+        <div class="footer-sub-container">
+          <span class="made-by-container">
+            <p>Made by:</p>
+            <span>
+              <p>Dan<p>go</p></p>
+              <p>Can</p>
+            </span>
+          </span>
+          <img src="../../../assets/dgc-logo.png" alt="logoDgc" />
+        </div>
+      </div>
+    </footer>
+    <script src="../../scripts/testeDeReacao.js"></script>
+  </body>
 </html>

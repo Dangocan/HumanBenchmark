@@ -1,0 +1,35 @@
+@import "../../../styles/footer.css";
+@import "../../../styles/header.css";
+
+.game-container {
+  width: 10em;
+  height: 12em;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bt-genius {
+  border: 1px black solid;
+  width: 4em;
+  height: 4em;
+  display: flex;
+  transition: "all 0.3s ease";
+}
+
+.ativo {
+  opacity: 0.5;
+}
+
+#botao-vermelho {
+  background: red;
+}
+#botao-verde {
+  background: green;
+}
+#botao-azul {
+  background: blue;
+}
+#botao-amarelo {
+  background: yellow;
+}

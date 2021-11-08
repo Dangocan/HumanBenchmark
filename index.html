@@ -1,35 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benchmark Humano</title>
-  <link rel="stylesheet" href="./reset.css" />
-</head>
-<body>
-  <header>
-    <img src="./assets/logo-header.png" alt="logo" srcset=""/>
-    <nav>
-      <ul>
-        <li>pagina inicial</li>
-        <li>página de usuário</li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benchmark Humano</title>
 
-  <main>
-    <h2>Testes</h2>
-    <div>
-      <ul><a href="./src/paginas/teste-reacao">Teste de Reação</a></ul>
-      <ul><a href="./src/paginas/teste-digitacao">Teste de Digitação</a></ul>
-    </div>
-  </main>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./assets/logo-header2.png" alt="logo" srcset="" />
+        <h1>
+          <p>Human</p>
+          <p>Benchmark</p>
+        </h1>
+      </div>
+      <nav>
+        <ul>
+          <li>Página Inicial</li>
+          <li>Ranking</li>
+          <li>Sobre</li>
+        </ul>
+      </nav>
+      <div class="user-avatar-container"> 
+        <img src="./assets/user.svg" alt="userAvatar" />
+      </div>
+    </header>
 
-  <footer>
-    <span>FOOTER</span>
-  </footer>
-  
-  <script src=""></script>
-</body>
+    <main>
+      <h2>Testes</h2>
+      <div>
+        <ul>
+          <a href="./src/paginas/teste-reacao">
+            <li>
+              <img src="./assets/reacao-icon.svg" alt="logoDigitacao" />
+              <p>Teste de Reação</p>
+            </li>
+          </a>
+          <a href="./src/paginas/teste-digitacao">
+            <li>
+              <img src="./assets/digitacao-icon.svg" alt="logoDigitacao" />
+              <p>Teste de Digitação</p>
+            </li>
+          </a>
+          <a href="./src/paginas/teste-cordenacao">
+            <li>
+              <img src="./assets/coordenacao-icon.svg" alt="logoDigitacao" />
+              <p>Teste de Coordenação</p>
+            </li>
+          </a>
+          <a href="./src/paginas/teste-memoria">
+            <li>
+              <img src="./assets/memoria-icon.svg" alt="logoDigitacao" />
+              <p>Teste de memória</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>Human Benchmark &copy; Copyright 2021</p>
+        <div class="footer-sub-container">
+          <span class="made-by-container">
+            <p>Made by:</p>
+            <span>
+              <p>Dan<p>go</p></p>
+              <p>Can</p>
+            </span>
+          </span>
+          <img src="./assets/dgc-logo.png" alt="logoDgc" />
+        </div>
+      </div>
+    </footer>
+
+    <script src=""></script>
+  </body>
 </html>

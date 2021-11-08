@@ -1,13 +1,48 @@
-.bg-reacao{
-  background: lightcoral;
-  display: inline-block;
+@import "../../../styles/footer.css";
+@import "../../../styles/header.css";
+
+body {
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-.bg-reacao___ativado{
-  background: lightgreen;
-  display: inline-block;
-  width: 100vw;
-  height: 50vh;
+h2 {
+  margin-top: 1em;
+  position: absolute;
+  font-size: 2em;
+  color: #1d1d1d;
+  text-align: center;
+}
+
+.bg-reacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ef2d56;
+  flex: 1;
+  height: 100vh;
+}
+
+.bg-reacao___ativado {
+  background: #53dd6c;
+}
+
+.bt-start {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #f0a202;
+  border-radius: 50%;
+  font-size: 2em;
+  color: #f0a202;
+  text-align: center;
+  background-color: #1d1d1d;
+  cursor: pointer;
+}
+
+.invisivel {
+  display: none;
 }
