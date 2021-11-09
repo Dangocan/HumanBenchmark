@@ -3,10 +3,10 @@
 inspired by Human Benchmark [website](https://humanbenchmark.com/tests/reactiontime)
 
 ## Implemented Tests:
--Reaction time.
--Coordenation.
--Typping speed.
--Memory.
+- Reaction time.
+- Coordenation.
+- Typping speed.
+- Memory.
 
 ### Reaction Time:
 ![ReactionChallenge](https://user-images.githubusercontent.com/55359384/140880988-5bddcefe-95e6-47a6-924a-59b84bdd9adc.gif)
