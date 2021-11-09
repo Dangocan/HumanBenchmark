@@ -13,9 +13,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
   </head>
-  <body>
+        <body style="overflow-x: hidden; width: 100vw;">
     <header>
       <div>
         <img src="./assets/logo-header2.png" alt="logo" srcset="" />
@@ -26,48 +28,54 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#" class="pagina-atual">Página Inicial</a></li>
+          <li><a href="./index.html">Página Inicial</a></li>
           <li><a href="./em-breve.html" >Ranking</a></li>
           <li><a href="./em-breve.html" >Sobre</a></li>
         </ul>
       </nav>
       <div class="user-avatar-container"> 
-        <a href="./em-breve.html" >
-          <img src="./assets/user.svg" alt="userAvatar" />
-        </a>
+        <img src="./assets/user.svg" alt="userAvatar" />
       </div>
     </header>
-
-    <main>
-      <h2>Testes</h2>
-      <div>
-        <ul>
-          <a href="./src/paginas/teste-reacao">
-            <li>
-              <img src="./assets/reacao-icon.svg" alt="logoDigitacao" />
-              <p>Teste de Reação</p>
-            </li>
-          </a>
-          <a href="./src/paginas/teste-digitacao">
-            <li>
-              <img src="./assets/digitacao-icon.svg" alt="logoDigitacao" />
-              <p>Teste de Digitação</p>
-            </li>
-          </a>
-          <a href="./src/paginas/teste-cordenacao">
-            <li>
-              <img src="./assets/coordenacao-icon.svg" alt="logoDigitacao" />
-              <p>Teste de Coordenação</p>
-            </li>
-          </a>
-          <a href="./src/paginas/teste-memoria">
-            <li>
-              <img src="./assets/memoria-icon.svg" alt="logoDigitacao" />
-              <p>Teste de memória</p>
-            </li>
-          </a>
-        </ul>
-      </div>
+    
+    <main
+      style="
+        height: calc(100vh - 70px);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        background-color: #363537;
+      "
+    >
+      <h1 style="font-size: 6rem; color: #f0a202;">Oops, nada por aqui!</h1>
+      <img src="./assets/logo-header2.png" />
+      <span
+        style="
+          display: flex;
+          font-size: 6rem;
+          color: #f0a202;
+          align-items: flex-end;
+        "
+      >
+        <p style="color: #ef2d56">E</p>
+        m&nbsp;
+        <p style="color: #ef2d56">B</p>
+        reve
+        <p style="color: #ef2d56">&nbsp;.&nbsp;</p>
+        .
+        <p style="color: #ef2d56">&nbsp;.&nbsp;</p>
+      </span>
+      <div
+        style="
+          height: calc(100vh - 70px);
+          width: 100vw;
+          z-index: 1;
+          position: absolute;
+          background: #363537;
+          opacity: 0.5;
+        "
+      ></div>
     </main>
 
     <footer>

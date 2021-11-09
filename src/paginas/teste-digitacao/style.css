@@ -1,38 +1,89 @@
 @import "../../../styles/footer.css";
 @import "../../../styles/header.css";
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: calc(100vh - 70px);
+  background-color: #363537;
+}
+
+h2 {
+  font-size: 2em;
+  color: #f0a202;
+}
+
+.digitacao-container {
+  display: flex;
+  height: 20vh;
+  width: 50vw;
+  border: 1px solid #f0a202;
+}
+
 .text-span-error {
-  color: red;
+  color: #ef2d56;
 }
 input {
+  /*Posicionar em cima do span*/
+  position: absolute;
   z-index: -1;
   opacity: 0;
-  position: absolute;
-  top: 1;
-  left: 1;
-  width: 30%;
-  height: 30%;
 }
+
 #text-span {
-  z-index: -1;
-  top: 1;
-  left: 1;
-  width: 30%;
-  height: 30%;
-  position: absolute;
-  color: lightgreen;
-  background-color: lightslategrey;
+  max-height: 20vh;
+  max-width: 50vw;
+  /*Posicionar em cima do input*/
+  overflow-y: scroll;
+  word-wrap: break-word;
+  font-size: 1.2em;
+  flex: 1;
+  color: #53dd6c;
+  background-color: #1d1d1d;
 }
+
+#text-span::-webkit-scrollbar-track {
+  background-color: #1d1d1d;
+}
+
+#text-span::-webkit-scrollbar {
+  width: 6px;
+  background-color: #363537;
+}
+
+#text-span::-webkit-scrollbar-thumb {
+  background-color: #f0a202;
+}
+
 #texto-principal {
-  font-size: x-large;
+  font-size: 2rem;
+  max-width: 90vw;
 }
+
+button {
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  color: #ef2d56;
+  border: 1px solid #ef2d56;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.ativo {
+  color: #53dd6c;
+  border: 1px solid #53dd6c;
+}
+
 .text-span-errado {
-  color: red;
+  color: #ef2d56;
 }
+
 #barra-digitacao {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: black;
-  font-size: xx-large;
+  color: #f0a202;
+  font-size: 2em;
   animation-name: blink;
   animation-duration: 0.4s;
   animation-iteration-count: infinite;
@@ -44,6 +95,6 @@ input {
     color: transparent;
   }
   to {
-    color: black;
+    color: #f0a202;
   }
 }

@@ -8,7 +8,7 @@ header {
   border-bottom: 1px solid #f0a202;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
@@ -37,12 +37,17 @@ nav ul {
   flex: 1;
   width: 33vw;
 }
-nav ul li {
-  list-style: none;
+
+nav ul li a {
   color: #f0a202;
+  text-decoration: none;
 }
 
-nav ul li:hover {
+nav ul li .pagina-atual {
+  color: #ef2d56;
+}
+
+nav ul li a:hover {
   color: #ef2d56;
   cursor: pointer;
 }

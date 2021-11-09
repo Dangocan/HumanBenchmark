@@ -20,9 +20,16 @@ const botaoPrincipal = document.getElementById("botao-jogar");
 textoPrincipal.innerHTML = texto;
 
 botaoPrincipal.addEventListener("click", () => {
-  textInput.focus();
-  tempoInicial = new Date();
-  console.log("start");
+  if (!tempoInicial || fimJogo) {
+    fimJogo = false;
+    botaoPrincipal.classList.add("ativo");
+    botaoPrincipal.innerHTML = "Jogo em progresso";
+    textInput.value = "";
+    textSpan.innerHTML = `<span id="barra-digitacao">I</span>`;
+    textInput.focus();
+    tempoInicial = new Date();
+    console.log("start");
+  }
 });
 
 textInput.addEventListener("blur", () => {
@@ -44,23 +51,29 @@ textInput.addEventListener("keydown", (e) => {
 });
 
 textInput.addEventListener("keyup", () => {
-  if (texto === textInput.value) {
-    tempoFinal = new Date();
-    console.log(
-      "Você levou " +
-        Math.floor(tempoFinal?.getTime() - tempoInicial?.getTime()) / 1000 +
-        "segundos"
-    );
-    fimJogo = true;
-  }
+  if (!fimJogo) {
+    if (texto === textInput.value) {
+      tempoFinal = new Date();
+      console.log(
+        "Você levou " +
+          Math.floor(tempoFinal?.getTime() - tempoInicial?.getTime()) / 1000 +
+          "segundos"
+      );
+      botaoPrincipal.classList.remove("ativo");
+      botaoPrincipal.innerHTML = `Você levou ${
+        Math.floor(tempoFinal?.getTime() - tempoInicial?.getTime()) / 1000
+      } segundos <br /> clique para jogar novamente`;
+      fimJogo = true;
+    }
 
-  input = textInput.value
-    .split("")
-    .map((letra, index) =>
-      texto[index] === letra
-        ? letra
-        : `<span class="text-span-error">${letra}</span>`
-    )
-    .join("");
-  textSpan.innerHTML = input + `<span id='barra-digitacao'>I</span>`;
+    input = textInput.value
+      .split("")
+      .map((letra, index) =>
+        texto[index] === letra
+          ? letra
+          : `<span class="text-span-error">${letra}</span>`
+      )
+      .join("");
+    textSpan.innerHTML = input + `<span id='barra-digitacao'>I</span>`;
+  }
 });
