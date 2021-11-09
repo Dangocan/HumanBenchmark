@@ -15,6 +15,8 @@ const botaoJogar = document.getElementById("botao-jogar");
 botaoJogar.onclick = async () => {
   if (!SequenciaEmAndamento) {
     SequenciaEmAndamento = true;
+    botaoJogar.classList.remove("desbloqueado");
+    botaoJogar.classList.add("bloqueado");
     botaoJogar.innerHTML = "espere";
     fimJogo = false;
     acertouSequencia = false;
@@ -34,6 +36,8 @@ botaoJogar.onclick = async () => {
         SequenciaEmAndamento = false;
         contagemClicks = 0;
         botaoJogar.innerHTML = "aperte";
+        botaoJogar.classList.remove("bloqueado");
+        botaoJogar.classList.add("desbloqueado");
         console.log("FIM da Sequencia");
         resolve(1);
       }, 1800);

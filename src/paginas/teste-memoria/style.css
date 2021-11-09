@@ -1,6 +1,43 @@
 @import "../../../styles/footer.css";
 @import "../../../styles/header.css";
 
+main {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #363537;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #f0a202;
+  text-align: center;
+}
+
+#botao-jogar {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #1d1d1d;
+}
+
+.bloqueado {
+  border: 5px solid #ef2d56;
+  color: #ef2d56;
+}
+
+.desbloqueado {
+  border: 5px solid #53dd6c;
+  color: #53dd6c;
+  cursor: pointer;
+}
+
 .game-container {
   width: 10em;
   height: 12em;
@@ -10,26 +47,32 @@
 }
 
 .bt-genius {
-  border: 1px black solid;
+  border: 2px #1d1d1d solid;
+  border-radius: 15px;
   width: 4em;
   height: 4em;
   display: flex;
   transition: "all 0.3s ease";
+  color: transparent;
 }
 
 .ativo {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 #botao-vermelho {
-  background: red;
+  cursor: pointer;
+  background: #ef2d56;
 }
 #botao-verde {
-  background: green;
+  cursor: pointer;
+  background: #53dd6c;
 }
 #botao-azul {
-  background: blue;
+  cursor: pointer;
+  background: #055e99;
 }
 #botao-amarelo {
-  background: yellow;
+  cursor: pointer;
+  background: #f0a202;
 }
