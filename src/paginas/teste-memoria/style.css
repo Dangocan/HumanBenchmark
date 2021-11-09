@@ -39,8 +39,8 @@ h2 {
 }
 
 .game-container {
-  width: 10em;
-  height: 12em;
+  width: 12em;
+  height: 13em;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
@@ -49,8 +49,8 @@ h2 {
 .bt-genius {
   border: 2px #1d1d1d solid;
   border-radius: 15px;
-  width: 4em;
-  height: 4em;
+  width: 5em;
+  height: 5em;
   display: flex;
   transition: "all 0.3s ease";
   color: transparent;
