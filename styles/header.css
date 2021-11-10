@@ -38,6 +38,10 @@ nav ul {
   width: 33vw;
 }
 
+nav ul li {
+  list-style: none;
+}
+
 nav ul li a {
   color: #f0a202;
   text-decoration: none;
